@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WatchTV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+  <body class="bg-dark">
+        <div class="row">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/carusel1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/carusel2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/carusel3.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-opacity-10">
+        <div class="container">
+            <a class="navbar-brand text-warning fs-3 fw-semibold" href="#">WatchTV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning fw-medium" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-medium" href="film.html">Yangilari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-medium" href="#">Eng mashxurlari</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-dark-subtle" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 my-3">
+                    <img src="images/poster1.png" class="img-thumbnail" alt="Jungle Cruise">
+                    <h4 class="text-warning">Jungle Cruise</h4>
+                    <a href="#"><button type="button" class="btn btn-primary btn-sm" style="width: 100px;">Ko'rish</button></a>
+                    <a href=""><button type="button" class="btn btn-success btn-sm" style="width: 100px;">Yuklab olish</button></a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-3">
+                    <img src="images/poster2.jpg" class="img-thumbnail" alt="Kung Fu Panda 4">
+                    <h4 class="text-warning">Kung Fu Panda 4</h4>
+                    <a href="#"><button type="button" class="btn btn-primary btn-sm" style="width: 100px;">Ko'rish</button></a>
+                    <a href=""><button type="button" class="btn btn-success btn-sm" style="width: 100px;">Yuklab olish</button></a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-3">
+                    <img src="images/poster3.jpg" class="img-thumbnail" alt="ONO">
+                    <h4 class="text-warning">ONO</h4>
+                    <a href="#"><button type="button" class="btn btn-primary btn-sm" style="width: 100px;">Ko'rish</button></a>
+                    <a href=""><button type="button" class="btn btn-success btn-sm" style="width: 100px;">Yuklab olish</button></a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-3">
+                    <img src="images/poster4.jpg" class="img-thumbnail" alt="Mr. Beans">
+                    <h4 class="text-warning">Mr. Beans Life</h4>
+                    <a href="#"><button type="button" class="btn btn-primary btn-sm" style="width: 100px;">Ko'rish</button></a>
+                    <a href=""><button type="button" class="btn btn-success btn-sm" style="width: 100px;">Yuklab olish</button></a>
+                </div>                
+            </div>
+        </div>
+        <div class="text-center">
+            <audio id="entrance_audio" controls autoplay>
+                <source src="music/sound.m4a" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row justify-content-between my-3 text-center">
+                    <div class="col-5">
+                        <h5 class="text-warning">by Khonimov Eldorbek</h5>
+                    </div>
+                    <div class="col-4">
+                        <a class="mx-2" href="https://t.me/ERXdealer"><img src="images/telegram.svg" alt="telegram"></a>
+                        <a class="mx-2" href="https://www.instagram.com/eldorbek.khanimov?igsh=ZDZ0MWVwbm1nZThw&utm_source=qr"><img src="images/instagram.svg" alt="instagram"></a>
+                        <a class="mx-2" href="http://www.youtube.com/@HollywoodEnglishCollection"><img src="images/youtube.svg" alt="youtube"></a>
+                        <a class="mx-2" href="https://www.netflix.com/uz-ru/"><img src="images/netflix.svg" alt="netflix"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script>     
+    // vid = document.getElementsByClassName("00");  
+     let vid = document.getElementById("entrance_audio");
+     vid.volume = 0.02;
+    </script>
+  </body>
+</html>
