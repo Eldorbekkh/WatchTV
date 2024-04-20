@@ -1,36 +1,4 @@
-/*.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 420;
-}
-form {
-    background: #013011;
-}
-
-.wrapper h1{
-    font-size: 36px;
-    text-align: center;
-}
-
-.wrapper .input-box{
-    width: 100%;
-    height: 50px;
-    background: red;
-    margin: 30px 0;
-}
-
-.input-box input {
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid regba(255, 255, 255, .2);
-    border-radius: 40px;
-}
-*/
 header {
-    height: 100vh;
     background: url('images/bg-ques.jpg');
     background-position: center;
     background-size: cover;
@@ -45,7 +13,7 @@ header {
     width: 520px;
     background: transparent;
     backdrop-filter: blur(80px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 10px rgba(244, 233, 36, 0.8);
 
 }
 
@@ -60,4 +28,9 @@ header {
 .wrapper label {
     color: rgb(243, 193, 13);
     text-shadow: 4px 4px 4px #000000;
+}
+.php {
+    background: transparent;
+    backdrop-filter: blur(80px);
+    box-shadow: 0 0 10px rgba(54, 219, 98, 0.8);
 }
