@@ -31,7 +31,7 @@ error_reporting(E_ALL);
                             <a class="nav-link active text-warning fw-medium" aria-current="page" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-warning fw-medium" href="#">Yangilari</a>
+                            <a class="nav-link text-warning fw-medium" href="menu.html">Yangilari</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-warning fw-medium" href="ques.html">So'rovnoma</a>

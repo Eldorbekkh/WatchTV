@@ -5,12 +5,6 @@ declare (strict_types=1);
 ini_set ('display_errors', '1');
 error_reporting(E_ALL);
 
-if ($isset($_GET['givenName'], $_GET['familyName'], $_GET['fatherName'], $_GET['address'], $_GET['phone'])) {
-            print "Ismingiz: " . $_GET['givenName'];
-} else {
-            print "So'robnomani to'ldiring!";
-}
-
 ?>
 
 <!doctype html>
@@ -37,7 +31,7 @@ if ($isset($_GET['givenName'], $_GET['familyName'], $_GET['fatherName'], $_GET['
                             <a class="nav-link active text-warning fw-medium" aria-current="page" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-warning fw-medium" href="#">Yangilari</a>
+                            <a class="nav-link text-warning fw-medium" href="menu.html">Yangilari</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-warning fw-medium" href="ques.html">So'rovnoma</a>
@@ -57,23 +51,23 @@ if ($isset($_GET['givenName'], $_GET['familyName'], $_GET['fatherName'], $_GET['
                     <h1 class="text-center">Anketa</h1>
                     <div class="col-md-12 mb-3">
                         <label for="validationDefault01" class="form-label">Ismingiz:</label>
-                        <input type="text" class="form-control border-2 border-warning rounded-pill" name="givenName" id="validationDefault01" placeholder="Name" required>
+                        <input type="text" class="form-control border-2 border-warning rounded-pill" name="givenName" id="validationDefault01" placeholder="Name">
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="validationDefault02" class="form-label">Familyangiz:</label>
-                        <input type="text" class="form-control border-2 border-warning rounded-pill" name="familyName" id="validationDefault02" placeholder="Surname" required>
+                        <input type="text" class="form-control border-2 border-warning rounded-pill" name="familyName" id="validationDefault02" placeholder="Surname">
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="validationDefault03" class="form-label">Sharifingiz:</label>
-                        <input type="text" class="form-control border-2 border-warning rounded-pill" name="fatherName" id="validationDefault03" placeholder="Sharif" required>
+                        <input type="text" class="form-control border-2 border-warning rounded-pill" name="fatherName" id="validationDefault03" placeholder="Sharif">
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="validationDefault05" class="form-label">Manzil:</label>
-                        <input type="text" class="form-control border-2 border-warning rounded-pill" name="address" id="validationDefault05" placeholder="City" required>
+                        <input type="text" class="form-control border-2 border-warning rounded-pill" name="address" id="validationDefault05" placeholder="City">
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="validationDefault06" class="form-label">Telefon:</label>
-                        <input type="tel" class="form-control border-2 border-warning rounded-pill" name="phone" id="validationDefault06" placeholder="+123456789" required>
+                        <input type="tel" class="form-control border-2 border-warning rounded-pill" name="phone" id="validationDefault06" placeholder="+123456789">
                     </div>
                     <div class="row">
                         <label class="form-label">Uylanganmisiz?</label>
@@ -99,7 +93,6 @@ if ($isset($_GET['givenName'], $_GET['familyName'], $_GET['fatherName'], $_GET['
                             <label class="btn btn-outline-warning" for="btncheck3">Tennis</label>
                         </div>
                     </div>
-                    
                     <div class="col-12 mb-3">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="agree" value="checked" id="invalidCheck2" required>
@@ -107,12 +100,15 @@ if ($isset($_GET['givenName'], $_GET['familyName'], $_GET['fatherName'], $_GET['
                                 Shartlarga rozilik bildiring
                             </label>
                         </div>
-                    </div>
+                    </div> 
                         <div class="col-12 text-center">
                             <button class="btn btn-success" type="submit">Submit form</button>
                             <button class="btn btn-danger" type="reset">Clear</button>
                         </div>
                 </form>
+                
+                <div class="php border border-2 border-success rounded p-3 mt-3 mb-3">
+                </div>
             </div>
         </div>
     </header>
